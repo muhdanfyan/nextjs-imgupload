@@ -10,4 +10,16 @@ export const getImages = async () => {
     } catch (error) {
         throw new Error("Failed to fetch data");
     }
-}
+};
+
+
+export const getImageById = async (id: string) => {
+    try {
+      const result = await prisma.upload.findUnique({
+        where: { id },
+      });
+      return result;
+    } catch (error) {
+      throw new Error("Failed to fetch data");
+    }
+  };
