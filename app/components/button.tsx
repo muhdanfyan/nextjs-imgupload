@@ -4,6 +4,7 @@
 import { useFormStatus } from "react-dom";
 // Mengimpor utility clsx untuk menggabungkan className secara kondisional
 import { clsx } from "clsx";
+import Link from "next/link";
 
 // Mendefinisikan dan mengekspor komponen SubmitButton
 // Komponen ini menerima satu properti `label` yang merupakan string
@@ -37,4 +38,18 @@ export const SubmitButton = ({ label }: { label: string }) => {
             )}
         </button>
     );
+};
+
+export const EditButton = ({id}:{id:string}) =>{
+    return (
+        <Link href={`edit/${id}`} className="py-3 text-sm bg-gray-50 rounded-bl-md hover:bg-gray-100 text-center">Edit</Link>
+    )
+};
+
+export const DeleteButton = ({id}:{id:string}) =>{
+    return (
+        <form className="py-3 text-sm bg-gray-50 rounded-bl-md hover:bg-gray-100 text-center">
+            <button type="submit">Delete</button>
+        </form>
+    )
 };
