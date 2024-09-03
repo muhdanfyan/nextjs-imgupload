@@ -12,9 +12,10 @@ const CreatePage = () => {
     // bg-slate-100: memberikan background warna abu-abu muda pada halaman
     <div className="min-h-screen flex items-center justify-center bg-slate-100">
       {/* Membungkus konten form dengan sebuah kotak yang memiliki background putih, 
-      rounded-sm: sudutnya sedikit melengkung
-      shadow: memberikan bayangan pada kotak
-      p-8: padding sebesar 2rem di semua sisi */}
+        rounded-sm: sudutnya sedikit melengkung
+        shadow: memberikan bayangan pada kotak
+        p-8: padding sebesar 2rem di semua sisi 
+      */}
       <div className="bg-white rounded-sm shadow p-8">
         {/* Menampilkan judul halaman dengan kelas utility
         text-2xl: ukuran teks 2xl
